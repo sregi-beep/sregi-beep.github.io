@@ -22,7 +22,7 @@ All assumptions are explicitly stated, and feedback is encouraged.
 
 ## 📁 Models & Data
 - [DCF Models (Excel)](/models/)
-- [Assumptions & Sensitivities](/research/)
+- [Research and Data](/research/)
 
 ---
 
