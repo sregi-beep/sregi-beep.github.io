@@ -26,14 +26,6 @@ All assumptions are explicitly stated, and feedback is encouraged.
 
 ---
 
-## 🧠 Methodology
-- Discounted Cash Flow (DCF)
-- Comparable Company Analysis
-- Sensitivity & Scenario Analysis
-- Conservative WACC & Terminal Growth Assumptions
-
----
-
 ## ⚠️ Disclaimer
 *This analysis is for educational purposes only and does not constitute investment advice.*
 
