@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Assumptions & Sensitivities
+title: Research and Data
 ---
 
-## Assumptions & Sensitivities
+## Research and Data
 
 Here are the key assumptions and sensitivity tables for our valuations.
 
