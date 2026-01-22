@@ -26,7 +26,7 @@ This site hosts public company valuations, DCF models, and investment research.
         data-reactions-enabled="1"
         data-emit-metadata="1"
         data-input-position="top"
-        data-theme="dark"
+        data-theme="light"
         data-lang="en"
         data-loading="lazy"
         crossorigin="anonymous"
