@@ -1,20 +1,41 @@
-# Steve Regi – Equity Research & Valuation
+---
+layout: default
+---
 
-Welcome.  
-This site hosts public company valuations, DCF models, and investment research.
+## Welcome
 
-## Research
-- Apple Inc. – DCF Valuation (Coming Soon)
+This site contains **public equity research, DCF valuations, and financial models** published for educational and analytical discussion.
 
-## Contact
-- GitHub: https://github.com/sregi-beep
-- LinkedIn: (your link)
+All assumptions are explicitly stated, and feedback is encouraged.
 
 ---
 
-### 💬 Comments & Peer Review
+## 📊 Research
 
-*Feedback on assumptions, WACC, terminal growth, and methodology is welcome.*
+- **Apple Inc. (AAPL)** – DCF Valuation  
+  *Coming soon*
+
+- **Costco Wholesale (COST)** – Equity Research  
+  *Coming soon*
+
+---
+
+## 📁 Models & Data
+- [DCF Models (Excel)](/models/)
+- [Assumptions & Sensitivities](/research/)
+
+---
+
+## 🧠 Methodology
+- Discounted Cash Flow (DCF)
+- Comparable Company Analysis
+- Sensitivity & Scenario Analysis
+- Conservative WACC & Terminal Growth Assumptions
+
+---
+
+## ⚠️ Disclaimer
+*This analysis is for educational purposes only and does not constitute investment advice.*
 
 <script src="https://giscus.app/client.js"
         data-repo="sregi-beep/sregi-beep.github.io"
