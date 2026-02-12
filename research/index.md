@@ -10,15 +10,6 @@ title: Tesla Research & Assumptions
 
 ---
 
-## Key Assumptions
-
-- Revenue CAGR: XX%
-- Long-term EBIT margin: XX%
-- WACC: XX%
-- Terminal Growth: XX%
-
----
-
 ## Sensitivity Framework
 
 Primary valuation drivers:
