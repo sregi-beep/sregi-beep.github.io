@@ -13,11 +13,9 @@ All assumptions are explicitly stated, and feedback is encouraged.
 
 ## 📊 Research
 
-- **Apple Inc. (AAPL)** – DCF Valuation  
-  *Coming soon*
-
-- **Costco Wholesale (COST)** – Equity Research  
-  *Coming soon*
+- **Tesla Inc. (TSLA)** – DCF Valuation  
+  [View Model](/models/)  
+  [Read Investment Memo](/research/)
 
 ---
 
