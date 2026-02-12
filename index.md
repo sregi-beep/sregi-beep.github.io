@@ -19,12 +19,6 @@ All assumptions are explicitly stated, and feedback is encouraged.
 
 ---
 
-## 📁 Models & Data
-- [DCF Models (Excel)](/models/)
-- [Research and Data](/research/)
-
----
-
 ## ⚠️ Disclaimer
 *This analysis is for educational purposes only and does not constitute investment advice.*
 
