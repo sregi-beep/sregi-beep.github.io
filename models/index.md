@@ -2,18 +2,34 @@
 layout: default
 title: DCF Models
 ---
-## DCF Models (Excel)
 
-Download the Excel files here:
+## Tesla (TSLA) – DCF Model
 
-- [Apple DCF Model](models/AAPL_DCF.xlsx)
-- [Costco DCF Model](models/COST_DCF.xlsx)
+**Company:** Tesla, Inc.  
+**Ticker:** TSLA  
+**Model Type:** Discounted Cash Flow (FCFF)
+
+### 📥 Download Model
+- [Download Tesla DCF Model (Excel)](TSLA_DCF_Model.xlsx)
 
 ---
 
-### 💬 Comments & Peer Review
+### 📊 Model Overview
 
-*Feedback on model structure, formulas, and assumptions is welcome.*
+The Excel model includes:
+
+- 5–10 year revenue forecast
+- Margin expansion assumptions
+- Free Cash Flow projection
+- WACC calculation
+- Terminal value calculation
+- Sensitivity tables (WACC vs Terminal Growth)
+
+---
+
+### 💬 Model Discussion
+
+*Feedback on structure, assumptions, terminal growth, and WACC inputs is welcome.*
 
 <script src="https://giscus.app/client.js"
         data-repo="sregi-beep/sregi-beep.github.io"
@@ -21,13 +37,8 @@ Download the Excel files here:
         data-category="General"
         data-category-id="DIC_kwDOQ-tsRs4C1Qzc"
         data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
         data-theme="light"
-        data-lang="en"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
+
