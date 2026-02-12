@@ -1,21 +1,37 @@
 ---
 layout: default
-title: Research and Data
+title: Tesla Research & Assumptions
 ---
 
-## Research and Data
+## Tesla (TSLA) – Investment Memo
 
-Here are the key assumptions and sensitivity tables for our valuations.
-
-- WACC: 8%
-- Terminal Growth: 2%
-- Revenue CAGR: 10%
+### 📄 Download Memo
+- [Download Tesla Investment Memo (PDF)](TSLA_Investment_Memo.pdf)
 
 ---
 
-### 💬 Comments & Peer Review
+## Key Assumptions
 
-*Feedback on assumptions, sensitivity tables, and methodology is welcome.*
+- Revenue CAGR: XX%
+- Long-term EBIT margin: XX%
+- WACC: XX%
+- Terminal Growth: XX%
+
+---
+
+## Sensitivity Framework
+
+Primary valuation drivers:
+
+- WACC range
+- Terminal growth range
+- Revenue growth scenarios
+
+---
+
+### 💬 Assumptions & Memo Discussion
+
+*Feedback on thesis, risk factors, valuation methodology, and assumptions is encouraged.*
 
 <script src="https://giscus.app/client.js"
         data-repo="sregi-beep/sregi-beep.github.io"
@@ -23,13 +39,8 @@ Here are the key assumptions and sensitivity tables for our valuations.
         data-category="General"
         data-category-id="DIC_kwDOQ-tsRs4C1Qzc"
         data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
         data-theme="light"
-        data-lang="en"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
+
