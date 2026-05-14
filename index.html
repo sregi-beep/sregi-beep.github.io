@@ -60,7 +60,6 @@
     :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
     .skip-link { position: absolute; left: -999px; top: var(--space-4); }
     .skip-link:focus { left: var(--space-4); z-index: 20; background: var(--color-surface); padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm); }
-
     .container { width: min(calc(100% - 2rem), var(--content-wide)); margin-inline: auto; }
     .topbar { position: sticky; top: 0; z-index: 30; border-bottom: 1px solid var(--color-divider); backdrop-filter: blur(18px); background: rgba(13,17,23,.78); }
     .nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 72px; }
@@ -70,7 +69,6 @@
     .nav-links { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
     .nav-links a { padding: .8rem 1rem; border: 1px solid transparent; border-radius: var(--radius-full); font-size: var(--text-sm); color: var(--color-text-muted); }
     .nav-links a:hover, .nav-links a.active { color: var(--color-text); border-color: var(--color-border); background: rgba(255,255,255,.03); }
-
     main { padding-block: var(--space-10) var(--space-24); }
     .hero-grid { display: grid; grid-template-columns: 300px 1fr; gap: var(--space-8); align-items: start; }
     .profile-card, .panel, .timeline-card, .project-card, .connect-card {
@@ -86,7 +84,6 @@
     .profile-meta { margin-top: var(--space-6); display: grid; gap: var(--space-4); color: var(--color-text-muted); font-size: var(--text-sm); }
     .meta-item { display: flex; align-items: flex-start; gap: var(--space-3); }
     .meta-item svg { width: 18px; height: 18px; flex: none; margin-top: 2px; color: var(--color-text-faint); }
-
     .content-col { display: grid; gap: var(--space-8); }
     .panel { padding: var(--space-8); }
     .eyebrow { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-xs); letter-spacing: .18em; text-transform: uppercase; color: var(--color-text-faint); margin-bottom: var(--space-5); }
@@ -96,17 +93,14 @@
     .btn-primary { background: var(--color-primary); border-color: transparent; color: #111; }
     .btn-primary:hover { background: var(--color-primary-hover); }
     .btn-secondary:hover { background: rgba(255,255,255,.04); }
-
     .stat-strip { margin-top: var(--space-8); display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-4); }
     .stat { padding: var(--space-5); border-radius: var(--radius-lg); background: rgba(255,255,255,.025); border: 1px solid var(--color-divider); }
     .stat-value { font-family: var(--font-display); font-size: var(--text-xl); }
     .stat-label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .14em; color: var(--color-text-faint); margin-top: var(--space-2); }
-
     .section-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-8); }
     .section-card { padding: var(--space-8); background: rgba(17,24,39,.64); border: 1px solid var(--color-border); border-radius: var(--radius-xl); }
     .section-title { font-size: var(--text-xl); font-family: var(--font-display); margin-bottom: var(--space-5); }
     .section-copy { color: var(--color-text-muted); max-width: 65ch; }
-
     .timeline-wrap { display: grid; gap: var(--space-8); }
     .timeline-card { padding: var(--space-8); }
     .timeline-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--space-4); margin-bottom: var(--space-6); }
@@ -118,27 +112,23 @@
     .timeline-org { margin-top: var(--space-1); color: var(--color-primary); font-size: var(--text-sm); }
     .timeline-desc { margin-top: var(--space-3); font-size: var(--text-sm); color: var(--color-text-muted); max-width: 58ch; }
     .timeline-date { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .14em; color: var(--color-text-faint); white-space: nowrap; }
-
     .projects-preview { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-5); }
     .project-card { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-4); }
     .project-tag { font-size: var(--text-xs); letter-spacing: .14em; text-transform: uppercase; color: var(--color-text-faint); }
     .project-card h3 { font-size: 1.35rem; line-height: 1.2; color: var(--color-text-faint); }
     .project-card p { color: var(--color-text-faint); font-size: var(--text-sm); }
     .project-link { margin-top: auto; color: var(--color-text-faint); font-weight: 600; font-size: var(--text-sm); pointer-events: none; }
-
     .connect-card { padding: var(--space-8); }
     .connect-links { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
     .connect-links a { padding: .9rem 1.4rem; border: 1px solid var(--color-border); border-radius: var(--radius-full); font-size: var(--text-sm); color: var(--color-text-muted); }
     .connect-links a:hover { color: var(--color-text); background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.18); }
     .resume-note { margin-top: var(--space-5); font-size: var(--text-sm); color: var(--color-text-faint); max-width: 52ch; line-height: 1.6; }
     footer { padding-top: var(--space-8); color: var(--color-text-faint); font-size: var(--text-sm); }
-
     .fade-in { opacity: 1; }
     @supports (animation-timeline: view()) {
       .fade-in { opacity: 0; animation: reveal linear both; animation-timeline: view(); animation-range: entry 0% entry 45%; }
     }
     @keyframes reveal { to { opacity: 1; } }
-
     @media (max-width: 1080px) {
       .hero-grid { grid-template-columns: 1fr; }
       .profile-card { position: relative; top: 0; }
@@ -238,12 +228,12 @@
           <article class="section-card">
             <div class="eyebrow">About me</div>
             <h2 class="section-title">Analytical, research-driven, and deeply curious.</h2>
-            <p class="section-copy">I am building a foundation across quantitative finance, applied mathematics, and computational methods. My work spans stochastic modeling, financial mathematics, numerical analysis, and machine learning — with a long-term goal of advanced research and a PhD in applied math or quantitative finance.</p>
+            <p class="section-copy">I enjoy solving complex problems through programming and mathematical modeling, especially at the intersection of technology and finance. I am eager to learn in professional environments and open to internship opportunities in data science, fintech, or quantitative analysis that allow me to grow professionally and gain hands-on experience.</p>
           </article>
           <article class="section-card">
             <div class="eyebrow">Education</div>
             <h2 class="section-title">University of Illinois Chicago</h2>
-            <p class="section-copy">Double major in biochemistry and mathematics / CS with a finance minor. Honors College and Dean’s List. Coursework includes Applied ODE, PDE, Mathematical Modeling, Optimization, and Numerical Analysis — alongside active involvement in research and teaching.</p>
+            <p class="section-copy">Double major in biochemistry and mathematics / CS with a finance minor. Honors College and Dean's List. Coursework includes Applied ODE, PDE, Mathematical Modeling, Optimization, and Numerical Analysis — alongside active involvement in research and teaching.</p>
           </article>
         </section>
 
@@ -261,7 +251,7 @@
                 <div>
                   <div class="timeline-role">Teaching Assistant</div>
                   <div class="timeline-org">Mathematics — University of Illinois Chicago</div>
-                  <p class="timeline-desc">Support instruction, grading, and peer learning across math courses, helping students work through proof-based and computational problem solving.</p>
+                  <p class="timeline-desc">Help with instruction, grading, and peer learning across Calculus courses.</p>
                 </div>
                 <div class="timeline-date">Current</div>
               </div>
@@ -269,7 +259,7 @@
                 <div>
                   <div class="timeline-role">Undergraduate Researcher</div>
                   <div class="timeline-org">Faculty-led research — UIC</div>
-                  <p class="timeline-desc">Contribute to projects spanning prime number theory and machine learning applications in chess, with emphasis on formal reasoning, experimentation, and model interpretation.</p>
+                  <p class="timeline-desc">Contributed to projects in prime number theory and machine learning applications in chess.</p>
                 </div>
                 <div class="timeline-date">Recent</div>
               </div>
@@ -280,9 +270,9 @@
             <div class="timeline-heading">
               <div>
                 <div class="eyebrow">Leadership &amp; extracurriculars</div>
-                <h2>Mentorship, initiative &amp; sustained involvement</h2>
+                <h2>Beyond the classroom</h2>
               </div>
-              <p>Beyond the classroom</p>
+              <p>Campus &amp; community</p>
             </div>
             <div class="timeline">
               <div class="timeline-item">
@@ -297,7 +287,7 @@
                 <div>
                   <div class="timeline-role">Self-directed technical projects</div>
                   <div class="timeline-org">Quant finance, coding &amp; research</div>
-                  <p class="timeline-desc">Outside formal roles, I build notebooks and modeling systems and continue refining my path toward advanced quantitative research and graduate study.</p>
+                  <p class="timeline-desc">Outside formal roles, I build notebooks and modeling systems and continue refining my skills in quantitative research and applied mathematics.</p>
                 </div>
                 <div class="timeline-date">Ongoing</div>
               </div>
@@ -332,13 +322,13 @@
         <section id="connect" class="connect-card fade-in">
           <div class="eyebrow">Connect</div>
           <h2 class="section-title">Links, r&eacute;sum&eacute; &amp; public profiles</h2>
-          <p class="section-copy">Feel free to reach out via LinkedIn or explore my work on GitHub. I’m open to conversations about research, quantitative finance, and graduate school opportunities.</p>
+          <p class="section-copy">Feel free to reach out via LinkedIn or explore my work on GitHub. I'm open to conversations about internship opportunities in data science, fintech, and quantitative analysis.</p>
           <div class="connect-links">
             <a href="https://github.com/sregi-beep" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/steve-regi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:sregi@uic.edu" aria-label="Request resume via email">Request R&eacute;sum&eacute;</a>
           </div>
-          <p class="resume-note">Interested in my r&eacute;sum&eacute; or CV? I’d be happy to share it — please reach out via LinkedIn or email and I will send it over promptly.</p>
+          <p class="resume-note">Interested in my r&eacute;sum&eacute; or CV? I'd be happy to share it — please reach out via LinkedIn or email and I will send it over promptly.</p>
           <footer>&copy; 2026 Steve Regi</footer>
         </section>
       </div>
