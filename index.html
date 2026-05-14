@@ -90,9 +90,7 @@
     .content-col { display: grid; gap: var(--space-8); }
     .panel { padding: var(--space-8); }
     .eyebrow { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-xs); letter-spacing: .18em; text-transform: uppercase; color: var(--color-text-faint); margin-bottom: var(--space-5); }
-    .hero-title { font-family: var(--font-display); font-size: var(--text-3xl); line-height: .95; max-width: 13ch; }
-    .hero-title .accent { color: var(--color-primary); }
-    .hero-copy { margin-top: var(--space-6); max-width: 66ch; color: var(--color-text-muted); }
+    .hero-copy { max-width: 66ch; color: var(--color-text-muted); }
     .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: .95rem 1.5rem; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600; border: 1px solid var(--color-border); min-width: 44px; min-height: 44px; }
     .btn-primary { background: var(--color-primary); border-color: transparent; color: #111; }
@@ -215,8 +213,6 @@
 
       <div class="content-col">
         <section class="panel fade-in">
-          <div class="eyebrow">Personal site</div>
-          <h2 class="hero-title">Hi — I build at the intersection of <span class="accent">math</span>, markets &amp; machine learning.</h2>
           <p class="hero-copy">Undergraduate at UIC pursuing a double major in biochemistry and mathematics / CS with a finance minor. I focus on stochastic modeling, financial mathematics, numerical analysis, and machine learning — turning rigorous theory into practical tools.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="./projects.html">View projects</a>
