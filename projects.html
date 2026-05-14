@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Steve Regi</title>
+  <meta name="description" content="Selected projects by Steve Regi across quantitative finance, applied math, machine learning, and technical research." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem); --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem); --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
+      --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem;
+      --color-bg: #0d1117; --color-surface: #111827;
+      --color-border: rgba(240,246,252,.12); --color-divider: rgba(240,246,252,.08);
+      --color-text: #f0f6fc; --color-text-muted: #9fb0c3; --color-text-faint: #6e7681;
+      --color-primary: #f78166; --color-primary-hover: #ff9b80;
+      --radius-lg: 1rem; --radius-xl: 1.5rem; --radius-full: 9999px; --content-wide: 1180px;
+      --font-display: 'Instrument Serif', Georgia, serif; --font-body: 'Inter', system-ui, sans-serif;
+      --transition: 180ms cubic-bezier(0.16,1,0.3,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+    body { min-height: 100vh; background: radial-gradient(circle at top left, rgba(247,129,102,.08), transparent 24%), var(--color-bg); color: var(--color-text); font-family: var(--font-body); line-height: 1.65; font-size: var(--text-base); }
+    a { color: inherit; text-decoration: none; transition: all var(--transition); }
+    img, svg { display: block; max-width: 100%; height: auto; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: 4px; }
+    .container { width: min(calc(100% - 2rem), var(--content-wide)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 20; background: rgba(13,17,23,.8); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-divider); }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); min-height: 72px; }
+    .brand { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-sm); font-weight: 700; }
+    .brand-mark { width: 38px; height: 38px; border-radius: 12px; border: 1px solid var(--color-border); display: grid; place-items: center; }
+    .brand-mark svg { width: 22px; height: 22px; }
+    .nav-links { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+    .nav-links a { padding: .8rem 1rem; border: 1px solid transparent; border-radius: var(--radius-full); font-size: var(--text-sm); color: var(--color-text-muted); }
+    .nav-links a:hover, .nav-links a.active { color: var(--color-text); border-color: var(--color-border); background: rgba(255,255,255,.03); }
+    main { padding: var(--space-12) 0 var(--space-20); }
+    .hero { padding: var(--space-10); border: 1px solid var(--color-border); border-radius: var(--radius-xl); background: rgba(17,24,39,.72); }
+    .eyebrow { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .18em; color: var(--color-text-faint); margin-bottom: var(--space-4); }
+    h1 { font-family: var(--font-display); font-size: var(--text-3xl); line-height: .95; max-width: 14ch; }
+    .hero p { margin-top: var(--space-5); max-width: 68ch; color: var(--color-text-muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-6); margin-top: var(--space-8); }
+    .card { padding: var(--space-8); border-radius: var(--radius-xl); border: 1px solid var(--color-border); background: rgba(17,24,39,.65); display: flex; flex-direction: column; gap: var(--space-4); }
+    .tag { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .16em; color: var(--color-text-faint); }
+    .card h2 { font-size: 1.45rem; line-height: 1.15; color: var(--color-text-faint); }
+    .card p { color: var(--color-text-faint); font-size: var(--text-sm); }
+    .meta { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: auto; padding-top: var(--space-2); }
+    .pill { padding: .55rem .85rem; border-radius: var(--radius-full); border: 1px solid var(--color-divider); font-size: var(--text-xs); color: var(--color-text-faint); }
+    .coming-soon { display: inline-flex; align-items: center; gap: var(--space-2); padding: .55rem 1rem; border-radius: var(--radius-full); border: 1px solid var(--color-divider); font-size: var(--text-xs); color: var(--color-text-faint); margin-top: auto; width: fit-content; }
+    .cta { display: inline-flex; align-items: center; gap: var(--space-2); padding: .9rem 1.4rem; border-radius: var(--radius-full); border: 1px solid var(--color-border); font-size: var(--text-sm); color: var(--color-text-muted); }
+    .cta:hover { background: rgba(255,255,255,.04); color: var(--color-text); }
+    .footer-note { margin-top: var(--space-10); padding: var(--space-8); border: 1px solid var(--color-divider); border-radius: var(--radius-xl); color: var(--color-text-muted); background: rgba(255,255,255,.02); }
+    .fade-in { opacity: 1; }
+    @supports (animation-timeline: view()) {
+      .fade-in { opacity: 0; animation: reveal linear both; animation-timeline: view(); animation-range: entry 0% entry 45%; }
+    }
+    @keyframes reveal { to { opacity: 1; } }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) { .nav { flex-wrap: wrap; padding-block: var(--space-3); } .hero, .card, .footer-note { padding: var(--space-5); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="./index.html" aria-label="Steve Regi home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M7 9.5h12.5c3.59 0 5.5 1.9 5.5 4.8 0 2.05-1.06 3.45-3.1 4.08 2.5.47 4.1 2.2 4.1 4.8 0 3.4-2.54 5.32-6.72 5.32H7"/>
+            <path d="M11 9.5v19"/>
+            <path d="M11 17h8.8"/>
+          </svg>
+        </span>
+        <span>Steve Regi</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero fade-in">
+      <div class="eyebrow">All projects</div>
+      <h1>Work across quant, code &amp; research.</h1>
+      <p>Projects will be added here as they develop. Each card will link to a full writeup, GitHub repository, or PDF when ready. Check back soon.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card fade-in">
+        <div class="tag">Coming soon</div>
+        <h2>Project one</h2>
+        <p>Details coming soon.</p>
+        <div class="meta">
+          <span class="pill">&mdash;</span>
+        </div>
+        <span class="coming-soon">In progress</span>
+      </article>
+
+      <article class="card fade-in">
+        <div class="tag">Coming soon</div>
+        <h2>Project two</h2>
+        <p>Details coming soon.</p>
+        <div class="meta">
+          <span class="pill">&mdash;</span>
+        </div>
+        <span class="coming-soon">In progress</span>
+      </article>
+
+      <article class="card fade-in">
+        <div class="tag">Coming soon</div>
+        <h2>Project three</h2>
+        <p>Details coming soon.</p>
+        <div class="meta">
+          <span class="pill">&mdash;</span>
+        </div>
+        <span class="coming-soon">In progress</span>
+      </article>
+
+      <article class="card fade-in">
+        <div class="tag">Coming soon</div>
+        <h2>Project four</h2>
+        <p>Details coming soon.</p>
+        <div class="meta">
+          <span class="pill">&mdash;</span>
+        </div>
+        <span class="coming-soon">In progress</span>
+      </article>
+    </section>
+
+    <section class="footer-note fade-in">
+      <div class="eyebrow">Note</div>
+      <p>Each project card is modular — swap in your exact GitHub repo link, a PDF writeup, or screenshots as projects develop. The layout will adapt automatically.</p>
+      <div style="margin-top:1.5rem">
+        <a class="cta" href="./index.html">&larr; Back to home</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

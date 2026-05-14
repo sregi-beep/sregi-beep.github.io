@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
-title: Steve Regi – Equity Research
-description: Public company valuations and financial analysis
+# Disable Jekyll so GitHub Pages serves raw HTML
+plugins: []
+exclude:
+  - README.md
