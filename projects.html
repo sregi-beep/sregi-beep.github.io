@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Steve Regi</title>
-  <meta name="description" content="Selected projects by Steve Regi across quantitative finance, applied math, machine learning, and technical research." />
+  <meta name="description" content="Selected projects by Steve Regi across quantitative finance, machine learning, chess AI, and personal tools." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
     main { padding: var(--space-12) 0 var(--space-20); }
     .hero { padding: var(--space-10); border: 1px solid var(--color-border); border-radius: var(--radius-xl); background: rgba(17,24,39,.72); }
     .eyebrow { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .18em; color: var(--color-text-faint); margin-bottom: var(--space-4); }
-    h1 { font-family: var(--font-display); font-size: var(--text-3xl); line-height: .95; max-width: 14ch; }
+    h1 { font-family: var(--font-display); font-size: var(--text-3xl); line-height: .95; max-width: 18ch; }
     .hero p { margin-top: var(--space-5); max-width: 68ch; color: var(--color-text-muted); }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-6); margin-top: var(--space-8); }
     .card { padding: var(--space-8); border-radius: var(--radius-xl); border: 1px solid var(--color-border); background: rgba(17,24,39,.65); display: flex; flex-direction: column; gap: var(--space-4); }
@@ -54,6 +54,9 @@
     .coming-soon { display: inline-flex; align-items: center; gap: var(--space-2); padding: .55rem 1rem; border-radius: var(--radius-full); border: 1px solid var(--color-divider); font-size: var(--text-xs); color: var(--color-text-faint); margin-top: auto; width: fit-content; }
     .gh-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: .55rem 1rem; border-radius: var(--radius-full); border: 1px solid var(--color-border); font-size: var(--text-xs); font-weight: 600; color: var(--color-primary); margin-top: auto; width: fit-content; transition: background var(--transition), border-color var(--transition); }
     .gh-link:hover { background: rgba(247,129,102,.08); border-color: var(--color-primary); }
+    .live-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: .55rem 1rem; border-radius: var(--radius-full); border: 1px solid rgba(74,222,128,.25); font-size: var(--text-xs); font-weight: 600; color: #4ade80; margin-top: var(--space-2); width: fit-content; transition: background var(--transition), border-color var(--transition); }
+    .live-link:hover { background: rgba(74,222,128,.08); border-color: rgba(74,222,128,.5); }
+    .link-row { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: auto; }
     .cta { display: inline-flex; align-items: center; gap: var(--space-2); padding: .9rem 1.4rem; border-radius: var(--radius-full); border: 1px solid var(--color-border); font-size: var(--text-sm); color: var(--color-text-muted); }
     .cta:hover { background: rgba(255,255,255,.04); color: var(--color-text); }
     .footer-note { margin-top: var(--space-10); padding: var(--space-8); border: 1px solid var(--color-divider); border-radius: var(--radius-xl); color: var(--color-text-muted); background: rgba(255,255,255,.02); }
@@ -91,54 +94,85 @@
     <section class="hero fade-in">
       <div class="eyebrow">All projects</div>
       <h1>Work across quant, code &amp; research.</h1>
-      <p>Projects will be added here as they develop. Each card links to the GitHub repository or a full writeup when ready.</p>
+      <p>A collection of projects spanning machine learning, quantitative finance, full-stack tools, and AI-assisted research. Each card links to the GitHub repository or live app.</p>
     </section>
 
     <section class="grid">
+
+      <!-- Chess Engine -->
       <article class="card fade-in">
-        <div class="tag">Python &middot; Flask</div>
+        <div class="tag">Python &middot; Machine Learning &middot; Flask</div>
         <h2>Chess Engine</h2>
-        <p>Python chess engine with Flask web UI.</p>
+        <p>A Python chess engine combining classical alpha-beta search with a neural network evaluation function. The engine uses <strong>minimax with alpha-beta pruning</strong> (engine/search.py) alongside a custom <strong>neural network evaluator</strong> (engine/nn_model.py + nn_eval.py) trained to assess board positions beyond simple material counting. Deployed as a <strong>Flask web app</strong> on Render with a full browser-based board UI.</p>
         <div class="meta">
           <span class="pill">Python</span>
           <span class="pill">Flask</span>
           <span class="pill">Neural Network</span>
+          <span class="pill">Alpha-Beta Search</span>
+          <span class="pill">python-chess</span>
+          <span class="pill">Render</span>
         </div>
-        <a class="gh-link" href="https://github.com/sregi-beep/chess-project" target="_blank" rel="noopener noreferrer">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          View on GitHub &rarr;
-        </a>
+        <div class="link-row">
+          <a class="gh-link" href="https://github.com/sregi-beep/chess-project" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+          <a class="live-link" href="https://chess-project-hhff.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            Live app
+          </a>
+        </div>
       </article>
 
+      <!-- Quant Persona App -->
+      <article class="card fade-in">
+        <div class="tag">JavaScript &middot; Quant Finance</div>
+        <h2>Quant Persona App</h2>
+        <p>A personal dashboard and daily quant practice tool. Features a <strong>100+ problem bank</strong> spanning Probability, Statistics, Stochastic Calculus, Derivatives, Portfolio Theory, Linear Algebra, Risk, and Finance — organized across 5 difficulty levels (Intro → Expert). A seeded daily shuffle delivers 10 problems per day, with topic filters, a show/hide answer flow, and a live <strong>markets dashboard</strong> and <strong>news feed</strong>. Built entirely in vanilla JS with no dependencies.</p>
+        <div class="meta">
+          <span class="pill">JavaScript</span>
+          <span class="pill">HTML/CSS</span>
+          <span class="pill">Quant Problems</span>
+          <span class="pill">Live Markets</span>
+          <span class="pill">News API</span>
+          <span class="pill">Seeded RNG</span>
+        </div>
+        <div class="link-row">
+          <a class="gh-link" href="https://github.com/sregi-beep/personal-app" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Stock Pitch with Perplexity -->
+      <article class="card fade-in">
+        <div class="tag">AI Research &middot; Equity Analysis</div>
+        <h2>Stock Pitch — Perplexity Computer</h2>
+        <p>An equity research pitch built using <strong>Perplexity Computer</strong> as the primary research and analysis engine. Covers fundamental analysis, financial modeling, competitive positioning, risk factors, and investment thesis — all sourced and structured with AI-assisted deep research. Demonstrates the application of quantitative and qualitative financial analysis in a real-world pitch format.</p>
+        <div class="meta">
+          <span class="pill">Equity Research</span>
+          <span class="pill">Perplexity AI</span>
+          <span class="pill">Financial Modeling</span>
+          <span class="pill">Fundamental Analysis</span>
+          <span class="pill">Investment Thesis</span>
+        </div>
+        <div class="link-row">
+          <span class="coming-soon">Writeup coming soon</span>
+        </div>
+      </article>
+
+      <!-- Placeholder -->
       <article class="card fade-in">
         <div class="tag" style="color:var(--color-text-faint)">Coming soon</div>
-        <h2>Project two</h2>
-        <p>Details coming soon.</p>
+        <h2>Next project</h2>
+        <p>Details coming soon. Check back as this space is updated.</p>
         <div class="meta">
           <span class="pill">&mdash;</span>
         </div>
         <span class="coming-soon">In progress</span>
       </article>
 
-      <article class="card fade-in">
-        <div class="tag" style="color:var(--color-text-faint)">Coming soon</div>
-        <h2>Project three</h2>
-        <p>Details coming soon.</p>
-        <div class="meta">
-          <span class="pill">&mdash;</span>
-        </div>
-        <span class="coming-soon">In progress</span>
-      </article>
-
-      <article class="card fade-in">
-        <div class="tag" style="color:var(--color-text-faint)">Coming soon</div>
-        <h2>Project four</h2>
-        <p>Details coming soon.</p>
-        <div class="meta">
-          <span class="pill">&mdash;</span>
-        </div>
-        <span class="coming-soon">In progress</span>
-      </article>
     </section>
 
     <section class="footer-note fade-in">
